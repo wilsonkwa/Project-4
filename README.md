@@ -1,17 +1,3 @@
-Jupyter Notebook
-README
-Last Checkpoint: 13 minutes ago
-(autosaved)
-Current Kernel Logo
-Python 3 
-File
-Edit
-View
-Insert
-Cell
-Kernel
-Widgets
-Help
 
 # Project-4
 ### West Nile Virus Prediction
