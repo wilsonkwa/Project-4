@@ -165,13 +165,18 @@ False Negative on the other hand refers to the scenario where we predicted that 
 
 From our model, roughly about 234 sq miles are predicted to be have WNV. To calculate the cost of spraying, we first assume that we will be spraying about 40% of Chicago and the cost of spraying per mile is ~11k, the estimated cost of spraying would be
 ​
-$$ 0.4 * 234 sq miles * $11,000 = $1.03 million $$
+
+0.4 * 234 sq miles * $11,000 = $1.03 million
 ​
+
 We assume we managed to reduce the number of WNV from 117 to 44 from 2016 to 2016
 ​
+
 We find that each infection case cost roughly $24k and we can calculate the savings we can get by reducing the number of WNV from 117 in 2013 to 44 in 2014.
 ​
-$$ (117-44) * $24,000 = $1.75million $$ 
+
+(117-44) * $24,000 = $1.75million
+
 ​
 Overall, we can get a total of <font color=red>$720k</font> in savings by making the decision to spray.    
 
