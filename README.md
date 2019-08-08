@@ -24,27 +24,28 @@ such as: <br>
     
 We have also combined our data using Principal Component Analysis (PCA) on data that are highly correlated to
 reduce the dimensionality of the data.
-​
+<br>
 In terms of modelling, while we included Decision trees, Random Forrest in our selection.
 More often than not, Logistic Regression, Adaboost or Gradient Boosting were the stronger models. (Details in materials)
-​
+<br>
 With the predicted probabities, we have also ran a Cost Benefit Analysis to discuss further on the where 
 resources of Chicago should go to prevent the virus.
-​
+<br>
 ## Constrains:
 Based on this data alone, we are unsure where spraying are done in 2012 and 2014 and hence affects the prediction
 of the potential rise in danger zones for the virus.
-​
+<br>
 Absence of population density, urban / rural area, infection rates, infected population also prevented us to
 analyse the data further to come up with more useful variables for the model.
-​
+<br>
 There is no clear link between the spraying data & the event of WNV case present in the sprayed locations,
 hence it could potentially affect the effectiveness of the model.
-​
+<br>
 It is not predictable how mosquito spray impacts the West Nile virus. Variations in quality and quality of mosquito spray used and techniques used to apply the spray will affect the effectiveness of the mosquito control measure. We are also not given enough information about how effective all the types or type of spray used at deterring mosquitoes with West Nile virus. These limitations could create future studies to help Chicago combat the West Nile virus.
-​
+<br>
 Additional data sources (bird populations, infectiousness among bird populations,and mosquito populations) are needed to truly understand the transmission cycle of WNV. This understanding would lead to better predictions of transmission intensity and thus inform mitigation strategies and ultimately reduce human cases. However, in the absence of these explicit models, our model is a tool for early warning and policy decision support.
-​
+<br>
+
 ## Materials:
 ### 1. Assets (Data files for which we used for analysis)
    There is a folder and raw csv files are within this folder.
@@ -94,22 +95,17 @@ The project details, codes and submission csv are within this folder
  ### Modelling & Prediction
 ​
 For the best model, the best features were characterized by Principal Component Analysis (PCA) to uncover grouping among features and to understand the data variance. The features chosen for the model were:<br>
-    - PrecipTotal
-    - StnPressure  
-    - SeaLevel       
-    - ResultSpeed   
-    - ResultDir     
-    - AvgSpeed <br> 
     - Latitude<br>
     - Longtitude<br>
-    - Species<br>
-    - Daylight<br>
-    - CodeSum<br>
-​
-​
+    - Daylight [new feature]<br>
+    - Species [dummied]<br>
+    - CodeSum [dummied]<br>
+    - PCA 1 ['Tmax', 'Tmin', 'Tavg', 'Depart','DewPoint', 'WetBulb', 'Heat', 'Cool'] <br>
+    - PCA 2 ['PrecipTotal', 'StnPressure', 'SeaLevel', 'ResultSpeed', 'ResultDir','AvgSpeed'] <br>
+
 The entire set of data was then entered into multiple statistical models to predict the number of moquitoes for the various locations followed by the probability of where in Chicago we would expect to find West Nile Virus. 
 To classify which location could possibly have the virus, we used statistical classification models such as Logistic Regression, Gradient Boosting Classifier, Random Forest Classifier, XGBoost Classifier, and Support Vector Machine Classifier.
-​
+<br>
 The report finds the best model is Logistic Regression with ROC_AUC score of <font color=red>0.81</font>. The model score seemed to be not at risk of overfitting to the data and potentially not performing badly on unseen data. 
 The model was then applied on Kaggle’s unknown data to get a <font color=red>0.74</font> ROC score.
 ​
