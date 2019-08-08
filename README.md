@@ -53,14 +53,11 @@ Additional data sources (bird populations, infectiousness among bird populations
 |File name            | Description                                                                         |
 |---------------------|-------------------------------------------------------------------------------------|
 |Chicago Boundaries   | Images to plot city's map                                                           |
+|CBA_plots            | Plots for the cost benefit analysis                                                 |
 |.DS_Store            | Apple's directory file                                                              |
 |combined_2.csv       | Combined and cleaned data from train and test data                                  |
 |combined_3.csv       | Different version and style of combining and cleaning data from train and test data |
 |full.csv             | final combined dataset with different treatment used in variables for modelling     |
-|plot1.png            | Data visualisation (dew point, wet bulb, average temperature)                       |
-|plot2.png            | Data visualisation (wind speed, average wind speed, wind direction)                 |
-|plot3.png            | Data visualisation (heat, cool)                                                     |
-|plot4.png            | Data visualisation (heat, cool, average temperature)                                |
 |sampleSubmission.csv | A base template for all submission csv                                              |
 |spray.csv            | Orginal spraying data in the city in year 2011 and 2013                             |
 |spray_2.csv          | Cleaned data after EDA from spray.csv                                               |
@@ -88,8 +85,7 @@ The project details, codes and submission csv are within this folder
 |2.4 Data Modelling   | TL;DR Best model. Similar to 2.3 with minor edits such as reinstating weather code variables etc, used LogisticRegression model with a 0.80 roc_auc score|
 |2.5 Data Modelling   | Lagged weather data, did an "event over sampling", followed by a GradientBoosting model with 0.83 roc_auc score, but didn't do as well as previous model |
 |2.6 Data Modelling   | Did an "event over sampling" then applied some classification models                |
-|3.0 CBA              | Cost-Benefit Analysis on Spraying vs Not Spraying                                   |
-|heatmap.png          | To visualise the traps and hotspots for virus                                       |<br>
+|3.0 CBA              | Cost-Benefit Analysis on Spraying vs Not Spraying                                   |<br>
 
 ## Recommendation & Conclusion:
  ### Modelling & Prediction
@@ -131,7 +127,7 @@ The model was then applied on Kaggle’s unknown data to get a <font color=red>0
 <br>
 <br>
 Here are the locations which were predicted to be infected with West Nile in the subsequent summers.
-<img src="assets/dangerzones.png">
+<img src="assets/CBA_plots/dangerzones.png">
 <br>
 
  ### Cost Benefit Analysis (CBA)
