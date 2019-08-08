@@ -137,16 +137,16 @@ Here are the locations which were predicted to be infected with West Nile in the
  ### Cost Benefit Analysis (CBA)
  #### When should we spray?
  
- <img src="assets/monthly_wnv.png">
+ <img src="assets/CBA_plots/monthly_wnv.png">
 From the chart above, we notice a trend where WNV presence peak between August and September but it's much more obvious in 2007 and 2013. Since we only have spray data for 2011 and 2013, and there were only 2 sprays in 2011, we will put our focus on sprays in 2013. 
 ​
-<img src="assets/effectiveness_of_spray.png">
+<img src="assets/CBA_plots/effectiveness_of_spray.png">
 By plotting the heatmap on prevalence of WNV in 2013 by month, we can see that prevalence of the WNV indeed peaks between July and September. This suggests that if we start spraying in early-July (before the expected spike in mid July), we may be able to reduce the prevalence of WNV in subsequent months.
 ​
 Next, we will look at where we can target the spraying to increase the effectiveness of sprays.
  
 ####  Where should we spray? 
- <img src="assets/dangerzones.png">
+ <img src="assets/CBA_plots/dangerzones.png">
  
 This heatmap shows the predicted area where there will be WNV based on our model. We can hence target the sprays to these area to increase the effectiveness of the spray, and thereby reducing the prevalence of WNV.
 
@@ -159,7 +159,7 @@ False Positive refers to the scenario where we predicted that the area has the W
 ​
 False Negative on the other hand refers to the scenario where we predicted that an area is free of WNV but in actual fact it's plagued with the WNV. This may potentially lead to an increased chance of human epidemic and eventually resulting in a huge negative economic impact downstream.    
     
-<img src="assets/confusion_matrix.png">
+<img src="assets/CBA_plots/confusion_matrix.png">
 
 #### Calculating the Cost VS Savings
 
