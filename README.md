@@ -100,7 +100,7 @@ For the best model, the best features were characterized by Principal Component 
     - PCA 2 ['PrecipTotal', 'StnPressure', 'SeaLevel', 'ResultSpeed', 'ResultDir','AvgSpeed'] <br>
 
 The entire set of data was then entered into multiple statistical models to predict the number of moquitoes for the various locations followed by the probability of where in Chicago we would expect to find West Nile Virus. 
-To classify which location could possibly have the virus, we used statistical classification models such as Logistic Regression, Gradient Boosting Classifier, Random Forest Classifier, XGBoost Classifier, and Support Vector Machine Classifier.
+To classify which location could possibly have the virus, we used statistical classification models such as Logistic Regression, Gradient Boosting Classifier, Random Forest Classifier, and Support Vector Machine Classifier.
 <br>
 The report finds the best model is Logistic Regression with ROC_AUC score of <font color=red>0.81</font>. The model score seemed to be not at risk of overfitting to the data and potentially not performing badly on unseen data. 
 The model was then applied on Kaggle’s unknown data to get a <font color=red>0.74</font> ROC score.
