@@ -57,19 +57,19 @@ Additional data sources (bird populations, infectiousness among bird populations
 |combined_2.csv       | Combined and cleaned data from train and test data                                  |
 |combined_3.csv       | Different version and style of combining and cleaning data from train and test data |
 |full.csv             | final combined dataset with different treatment used in variables for modelling     |
-|plot1.png            | Data visualisation                                                                  |
-|plot2.png            | Data visualisation                                                                  |
-|plot3.png            | Data visualisation                                                                  |
-|plot4.png            | Data visualisation                                                                  |
+|plot1.png            | Data visualisation (dew point, wet bulb, average temperature)                       |
+|plot2.png            | Data visualisation (wind speed, average wind speed, wind direction)                 |
+|plot3.png            | Data visualisation (heat, cool)                                                     |
+|plot4.png            | Data visualisation (heat, cool, average temperature)                                |
 |sampleSubmission.csv | A base template for all submission csv                                              |
 |spray.csv            | Orginal spraying data in the city in year 2011 and 2013                             |
 |spray_2.csv          | Cleaned data after EDA from spray.csv                                               |
 |test.csv             | Original file from source, containing Trap collection data in years 2008/10/12/14   |
 |test_2.csv           | Cleaned data after EDA from test.csv                                                |
-|test_modified.csv    | Cleaned data after EDA from test.csv with a different style                         |
+|test_modified.csv    | Cleaned data after EDA from test.csv (features added)                               |
 |train.csv            | Original file from source, containing Trap collection data in years 2007/09/11/13   |
 |train_2.csv          | Cleaned data after EDA from train.csv                                               |
-|train_modified.csv   | Cleaned data after EDA from traint.csv with a different style                       |
+|train_modified.csv   | Cleaned data after EDA from traint.csv (features added)                             |
 |weather.csv          | Original file from source, containing weather data from 2007 to 2014                |
 |weather_2.csv        | Cleaned data after EDA from weather.csv                                             |<br>
 
@@ -87,7 +87,7 @@ The project details, codes and submission csv are within this folder
 |2.3 Data Modelling   | Refresh EDA portion, selected less variables, did PCA on weather variables, followed by RandomForest model and 0.87 roc_auc score|
 |2.4 Data Modelling   | TL;DR Best model. Similar to 2.3 with minor edits such as reinstating weather code variables etc, used LogisticRegression model with a 0.80 roc_auc score|
 |2.5 Data Modelling   | Lagged weather data, did an "event over sampling", followed by a GradientBoosting model with 0.83 roc_auc score, but didn't do as well as previous model |
-|2.6 Data Modelling   | Did an "event over sampling"                                                        |
+|2.6 Data Modelling   | Did an "event over sampling" then applied some classification models                |
 |3.0 CBA              | Cost-Benefit Analysis on Spraying vs Not Spraying                                   |
 |heatmap.png          | To visualise the traps and hotspots for virus                                       |<br>
 
