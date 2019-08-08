@@ -165,7 +165,7 @@ From our model, roughly about 234 sq miles are predicted to be have WNV. To calc
 0.4 * 234 sq miles * $11,000 = $1.03 million
 ​
 
-We assume we managed to reduce the number of WNV from 117 to 44 from 2016 to 2016
+We assume we managed to reduce the number of WNV from 117 to 44 from 2013 to 2014
 ​
 
 We find that each infection case cost roughly $24k and we can calculate the savings we can get by reducing the number of WNV from 117 in 2013 to 44 in 2014.
