@@ -17,8 +17,10 @@ preventing transmission of this potentially deadly virus.
     2. Propose solutions to stop and prevent these hotspots from breeding mosquitoes 
 ## Methodology:
 With the given datasets, we linked up the datasets together and create models based on the relevant features
-such as:
-    - temperature, total precipitation, species of mosquitos etc.
+such as: <br>
+    - temperature <br>
+    - total precipitation <br>
+    - species of mosquitos etc. <br>
     
 We have also combined our data using Principal Component Analysis (PCA) on data that are highly correlated to
 reduce the dimensionality of the data.
@@ -68,8 +70,8 @@ Additional data sources (bird populations, infectiousness among bird populations
 |train_2.csv          | Cleaned data after EDA from train.csv                                               |
 |train_modified.csv   | Cleaned data after EDA from traint.csv with a different style                       |
 |weather.csv          | Original file from source, containing weather data from 2007 to 2014                |
-|weather_2.csv        | Cleaned data after EDA from weather.csv                                             |
-​
+|weather_2.csv        | Cleaned data after EDA from weather.csv                                             |<br>
+
 ### 2. Codes
 The project details, codes and submission csv are within this folder
     
@@ -86,23 +88,23 @@ The project details, codes and submission csv are within this folder
 |2.5 Data Modelling   | Lagged weather data, did an "event over sampling", followed by a GradientBoosting model with 0.83 roc_auc score, but didn't do as well as previous model |
 |2.6 Data Modelling   | Did an "event over sampling"                                                        |
 |3.0 CBA              | Cost-Benefit Analysis on Spraying vs Not Spraying                                   |
-|heatmap.png          | To visualise the traps and hotspots for virus                                       |
-​
+|heatmap.png          | To visualise the traps and hotspots for virus                                       |<br>
+
 ## Recommendation & Conclusion:
  ### Modelling & Prediction
 ​
 For the best model, the best features were characterized by Principal Component Analysis (PCA) to uncover grouping among features and to understand the data variance. The features chosen for the model were:<br>
-PrecipTotal   
-StnPressure  
-SeaLevel       
-ResultSpeed   
-ResultDir     
-AvgSpeed <br> 
-Latitude<br>
-Longtitude<br>
-Species<br>
-Daylight<br>
-CodeSum<br>
+    - PrecipTotal
+    - StnPressure  
+    - SeaLevel       
+    - ResultSpeed   
+    - ResultDir     
+    - AvgSpeed <br> 
+    - Latitude<br>
+    - Longtitude<br>
+    - Species<br>
+    - Daylight<br>
+    - CodeSum<br>
 ​
 ​
 The entire set of data was then entered into multiple statistical models to predict the number of moquitoes for the various locations followed by the probability of where in Chicago we would expect to find West Nile Virus. 
@@ -135,7 +137,7 @@ The model was then applied on Kaggle’s unknown data to get a <font color=red>0
 Here are the locations which were predicted to be infected with West Nile in the subsequent summers.
 <img src="assets/dangerzones.png">
 <br>
-​
+
  ### Cost Benefit Analysis (CBA)
  #### When should we spray?
  
@@ -151,7 +153,7 @@ Next, we will look at where we can target the spraying to increase the effective
  <img src="assets/dangerzones.png">
  
 This heatmap shows the predicted area where there will be WNV based on our model. We can hence target the sprays to these area to increase the effectiveness of the spray, and thereby reducing the prevalence of WNV.
-​
+
 #### Weighing the cost of inaccuracy
 Since this is a classification problem, we would ideally want to work towards minimizing the number of false positive and false negative classifications. Especially when such misclassification would result in an increased probability of epidemic or unnecessarily spending money on spraying locations where there is low likelihood of WNV being detected. 
 ​
@@ -162,9 +164,9 @@ False Positive refers to the scenario where we predicted that the area has the W
 False Negative on the other hand refers to the scenario where we predicted that an area is free of WNV but in actual fact it's plagued with the WNV. This may potentially lead to an increased chance of human epidemic and eventually resulting in a huge negative economic impact downstream.    
     
 <img src="assets/confusion_matrix.png">
-​
+
 #### Calculating the Cost VS Savings
-​
+
 From our model, roughly about 234 sq miles are predicted to be have WNV. To calculate the cost of spraying, we first assume that we will be spraying about 40% of Chicago and the cost of spraying per mile is ~11k, the estimated cost of spraying would be
 ​
 $$ 0.4 * 234 sq miles * $11,000 = $1.03 million $$
@@ -178,7 +180,7 @@ $$ (117-44) * $24,000 = $1.75million $$
 Overall, we can get a total of <font color=red>$720k</font> in savings by making the decision to spray.    
 
 #### Recommendations from CBA <br>
-​
+
 Since the savings from spraying is greater then the cost of spraying, we would recommend to always spray in order to control the spread of WNV. We could also consider spraying slightly earlier, near early July before the expected peak of WNV to further reduce the spread of west nile virus.
 ​
 In addition, we could consider larviciding in late June, which is the process of controlling mosquitoes when they are in the larvae or pupal form. This could further prevent the spread of WNV in subsequent months.
@@ -186,9 +188,9 @@ In addition, we could consider larviciding in late June, which is the process of
 
 ## Presentation Slides <br>
 To be included here after project presentation
-​
+
 ## References <br>
-​
+
 1. https://www.cdc.gov/westnile/statsmaps/cumMapsData.html
 2. https://chicagoflaneur.com/2016/06/20/a-different-way-of-looking-at-density-in-chicago/
 3. https://www.sporcle.com/games/No1LesbroinChi/populated_chicago_neighborhoods/results
