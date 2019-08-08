@@ -15,7 +15,6 @@ preventing transmission of this potentially deadly virus.
 ## Objective:
     1. To predict mosquito hotspots in Chicago using our models.
     2. Propose solutions to stop and prevent these hotspots from breeding mosquitoes 
-​
 ## Methodology:
 With the given datasets, we linked up the datasets together and create models based on the relevant features
 such as:
@@ -45,7 +44,6 @@ It is not predictable how mosquito spray impacts the West Nile virus. Variations
 Additional data sources (bird populations, infectiousness among bird populations,and mosquito populations) are needed to truly understand the transmission cycle of WNV. This understanding would lead to better predictions of transmission intensity and thus inform mitigation strategies and ultimately reduce human cases. However, in the absence of these explicit models, our model is a tool for early warning and policy decision support.
 ​
 ## Materials:
-​
 ### 1. Assets (Data files for which we used for analysis)
    There is a folder and raw csv files are within this folder.
    
@@ -73,7 +71,7 @@ Additional data sources (bird populations, infectiousness among bird populations
 |weather_2.csv        | Cleaned data after EDA from weather.csv                                             |
 ​
 ### 2. Codes
-    The project details, codes and submission csv are within this folder
+The project details, codes and submission csv are within this folder
     
 |File name            | Description                                                                         |
 |---------------------|-------------------------------------------------------------------------------------|
@@ -132,13 +130,15 @@ The model was then applied on Kaggle’s unknown data to get a <font color=red>0
 |8      | 7200 N OKETO AVE       |
 |9      | 5100 N MONT CLARE AVE  |
 |10     | 6100 S MELVINA AVE     |
-​
+<br>
+<br>
 Here are the locations which were predicted to be infected with West Nile in the subsequent summers.
 <img src="assets/dangerzones.png">
+<br>
 ​
  ### Cost Benefit Analysis (CBA)
-​
  #### When should we spray?
+ 
  <img src="assets/monthly_wnv.png">
 From the chart above, we notice a trend where WNV presence peak between August and September but it's much more obvious in 2007 and 2013. Since we only have spray data for 2011 and 2013, and there were only 2 sprays in 2011, we will put our focus on sprays in 2013. 
 ​
@@ -164,6 +164,7 @@ False Negative on the other hand refers to the scenario where we predicted that 
 <img src="assets/confusion_matrix.png">
 ​
 #### Calculating the Cost VS Savings
+​
 From our model, roughly about 234 sq miles are predicted to be have WNV. To calculate the cost of spraying, we first assume that we will be spraying about 40% of Chicago and the cost of spraying per mile is ~11k, the estimated cost of spraying would be
 ​
 $$ 0.4 * 234 sq miles * $11,000 = $1.03 million $$
@@ -175,17 +176,18 @@ We find that each infection case cost roughly $24k and we can calculate the savi
 $$ (117-44) * $24,000 = $1.75million $$ 
 ​
 Overall, we can get a total of <font color=red>$720k</font> in savings by making the decision to spray.    
+
+#### Recommendations from CBA <br>
 ​
-#### Recommendations from CBA
 Since the savings from spraying is greater then the cost of spraying, we would recommend to always spray in order to control the spread of WNV. We could also consider spraying slightly earlier, near early July before the expected peak of WNV to further reduce the spread of west nile virus.
 ​
 In addition, we could consider larviciding in late June, which is the process of controlling mosquitoes when they are in the larvae or pupal form. This could further prevent the spread of WNV in subsequent months.
 ​
-​
-## Presentation Slides
+
+## Presentation Slides <br>
 To be included here after project presentation
 ​
-## References
+## References <br>
 ​
 1. https://www.cdc.gov/westnile/statsmaps/cumMapsData.html
 2. https://chicagoflaneur.com/2016/06/20/a-different-way-of-looking-at-density-in-chicago/
